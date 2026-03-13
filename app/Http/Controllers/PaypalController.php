@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use Srmklive\PayPal\Services\PayPal;
 use Illuminate\Http\Request;
-use App\Models\Cart;
-use App\Models\Product;
 use App\Models\Order;
 use Illuminate\Support\Facades\Log;
 
