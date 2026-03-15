@@ -62,8 +62,6 @@ use App\Http\Controllers\AmazonProductController;
         Route::get('/', [AdminController::class, 'index'])->name('admin');
         // user route
         Route::resource('users', 'UsersController');
-        // Banner
-        Route::resource('banner', 'BannerController');
         // Profile
         Route::get('/profile', [AdminController::class, 'profile'])->name('admin-profile');
         Route::post('/profile/{id}', [AdminController::class, 'profileUpdate'])->name('profile-update');

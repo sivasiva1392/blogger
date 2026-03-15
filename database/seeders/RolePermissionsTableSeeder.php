@@ -33,7 +33,6 @@ class RolePermissionsTableSeeder extends Seeder
         if ($adminRole) {
             $adminPermissions = [
                 'view_dashboard',
-                'view_banners', 'create_banners', 'edit_banners', 'delete_banners',
                 'view_posts', 'create_posts', 'edit_posts', 'delete_posts',
                 'view_post_categories', 'create_post_categories', 'edit_post_categories', 'delete_post_categories',
                 'view_post_tags', 'create_post_tags', 'edit_post_tags', 'delete_post_tags',

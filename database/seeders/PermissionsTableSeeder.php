@@ -24,12 +24,6 @@ class PermissionsTableSeeder extends Seeder
             ['name' => 'edit_users', 'display_name' => 'Edit Users', 'module' => 'users'],
             ['name' => 'delete_users', 'display_name' => 'Delete Users', 'module' => 'users'],
             
-            // Banner permissions
-            ['name' => 'view_banners', 'display_name' => 'View Banners', 'module' => 'banners'],
-            ['name' => 'create_banners', 'display_name' => 'Create Banners', 'module' => 'banners'],
-            ['name' => 'edit_banners', 'display_name' => 'Edit Banners', 'module' => 'banners'],
-            ['name' => 'delete_banners', 'display_name' => 'Delete Banners', 'module' => 'banners'],
-            
             // Post permissions
             ['name' => 'view_posts', 'display_name' => 'View Posts', 'module' => 'posts'],
             ['name' => 'create_posts', 'display_name' => 'Create Posts', 'module' => 'posts'],

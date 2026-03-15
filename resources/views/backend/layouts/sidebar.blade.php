@@ -15,26 +15,9 @@
       <span>Dashboard</span></a>
    </li>
    <!-- Divider -->
-   <hr class="sidebar-divider">
-   @if(auth()->user()->canAccessModule('banners') || auth()->user()->role_id == 1)
-   <div class="sidebar-heading">
-      Banner
-   </div>
-   @endif
-   <!-- Nav Item - Pages Collapse Menu -->
-   <!-- Nav Item - Charts -->
-   @if(auth()->user()->canAccessModule('banners') || auth()->user()->role_id == 1)
-   <li class="nav-item {{ Str::startsWith(request()->path(), 'admin/banner') ? 'active' : '' }}">
-      <a class="nav-link" href="{{route('banner.index')}}">
-      <i class="fas fa-image"></i>
-      <span>Banners</span></a>
-   </li>
-   @endif
-
-   <!-- Divider -->
-   @if(auth()->user()->canAccessModule('amazon_categories') || auth()->user()->canAccessModule('amazon_products') || auth()->user()->role_id == 1)
    <hr class="sidebar-divider d-none d-md-block">
    <!-- Heading -->
+   @if(auth()->user()->canAccessModule('amazon_categories') || auth()->user()->canAccessModule('amazon_products') || auth()->user()->role_id == 1)
    <div class="sidebar-heading">
       Amazon
    </div>
